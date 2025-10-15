@@ -1,0 +1,14 @@
+{
+  "name": "eldongabriel-clone",
+  "version": "0.0.0",
+  "private": true,
+  "homepage": "https://femiakins.github.io/My-portfolio",
+  "scripts": {
+    "preview": "python -m http.server 5173",
+    "start": "python -m http.server 5173",
+    "deploy": "npx gh-pages -d docs"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}

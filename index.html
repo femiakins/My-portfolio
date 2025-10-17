@@ -7,9 +7,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="Portfolio site" />
   <style>
-    :root { --site-bg: #061324; }
-    body { background-color: var(--site-bg); color: #e6eef8; }
-    a { color: #7dd3fc; }
+    :root{
+      --site-bg: #0a192f;
+      --card-bg: rgba(17, 34, 64, 0.8);
+      --text: #e6eef8;
+      --muted: #8892b0;
+      --link: #64ffda;
+      --hover: #00ff9d;
+      --accent: #64ffda;
+      --border: rgba(255,255,255,0.1);
+      --button-bg: rgba(100, 255, 218, 0.1);
+    }
+    html,body{background:var(--site-bg);color:var(--text);}
+    a{color:var(--link);transition:color 0.2s ease-in-out;}
+    a:hover{color:var(--hover) !important;}
+    .bg-white{background-color:var(--card-bg) !important;color:inherit !important}
+    input,textarea,select,button{background:transparent !important;color:var(--text) !important;border-color:var(--border) !important}
+    .shadow,.shadow-sm,.shadow-lg{box-shadow:0 8px 24px rgba(2,6,23,0.6) !important}
+    header, footer{background:transparent}
+    .bg-indigo-600{background-color:var(--button-bg) !important;color:var(--accent) !important;border:1px solid var(--accent) !important;}
+    .bg-indigo-600:hover{background-color:var(--accent) !important;color:var(--site-bg) !important;}
+    .text-gray-500, .text-gray-600{color:var(--muted) !important;}
+    .hover\:text-indigo-600:hover{color:var(--accent) !important;}
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">

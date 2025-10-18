@@ -3,38 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Akinsanya Ouwafemi</title>
+  <title>Akinsanya Oluwafemi</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="Portfolio site" />
+<style>
+  :root{
+    --site-bg: #0f172a;  /* Dark blue background */
+    --card-bg: #1e293b;  /* Medium dark blue for cards */
+    --text: #e2e8f0;     /* Light text color */
+    --muted: #94a3b8;    /* Muted text */
+    --link: #60a5fa;     /* Bright blue links */
+    --hover: #93c5fd;    /* Lighter blue on hover */
+    --accent: #1d4ed8;   /* Vibrant blue for accents */
+    --border: #334155;   /* Dark blue border */
+    --button-bg: #1d4ed8; /* Button background */
+  }
+  
+  /* Also update the body background class */
+  body.bg-gray-50 {
+    background-color: var(--site-bg) !important;
+    color: var(--text) !important;
+  }
+</style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akinsanya Oluwafemi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css"> <!-- ADD THIS LINE -->
+  <meta name="description" content="Portfolio site" />
   <style>
-    :root{
-      --site-bg: #252a34;
-      --card-bg: rgba(26, 29, 36, 0.8);
-      --text: #eaeaea;
-      --muted: #a0a0a0;
-      --link: #73b4d5;
-      --hover: #8fc7e3;
-      --accent: #73b4d5;
-      --border: #1a1d24;
-      --button-bg: #73b4d5;
-    }
-    html,body{background:var(--site-bg);color:var(--text);}
-    a{color:var(--link);transition:color 0.2s ease-in-out;}
-    a:hover{color:var(--hover) !important;}
-    .bg-white{background-color:var(--card-bg) !important;color:inherit !important}
-    input,textarea,select,button{background:transparent !important;color:var(--text) !important;border-color:var(--border) !important}
-    .shadow,.shadow-sm,.shadow-lg{box-shadow:0 8px 24px rgba(2,6,23,0.6) !important}
-    header, footer{background:transparent}
-    .bg-indigo-600{background-color:var(--button-bg) !important;color:var(--accent) !important;border:1px solid var(--accent) !important;}
-    .bg-indigo-600:hover{background-color:var(--accent) !important;color:var(--site-bg) !important;}
-    .text-gray-500, .text-gray-600{color:var(--muted) !important;}
-    .hover\:text-indigo-600:hover{color:var(--accent) !important;}
+    /* your existing inline styles */
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
   <header class="bg-white shadow">
     <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#" class="text-xl font-semibold">Your Name</a>
+      <a href="#" class="text-xl font-semibold">Akinsanya Oluwafemi</a>
       <nav class="hidden md:flex gap-6 text-sm">
         <a href="docs/index.html#about" class="hover:text-indigo-600">About</a>
         <a href="docs/experience.html" class="hover:text-indigo-600">Experience</a>
@@ -55,8 +60,11 @@
     <!-- Hero -->
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
-  <h1 class="text-4xl md:text-5xl font-bold mb-4">Lorem ipsum dolor sit amet.</h1>
-  <p class="text-lg text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">WELCOME TO MY LIBRARY.</h1>
+  <p class="text-lg text-gray-600 mb-6">Hey there, welcome in — I’m Akinsanya Oluwafemi, your friendly CyberSecurity Analyst and Cybersecurity content creator, tech enthusiast, and lover of all things digital (and sometimes football ⚽).
+
+    This space is where I document my cybersecurity journey — the wins, the fails, and those “why is this code not working?” moments..</p>
+  <p>Ready to see what I’ve been building?</p>
         <p class="flex gap-3">
           <a href="#projects" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded shadow">See projects</a>
           <a href="#contact" class="inline-block border border-gray-300 px-5 py-2 rounded">Get in touch</a>
@@ -70,16 +78,22 @@
     <!-- About -->
     <section id="about" class="mt-16 bg-white rounded-lg p-8 shadow-sm">
       <h2 class="text-2xl font-semibold mb-4">About</h2>
-      <p class="text-gray-600 leading-relaxed">A short bio goes here. Describe your skills, interests, and what you enjoy building. Keep it concise and friendly.</p>
+      <p class="text-gray-600 leading-relaxed">I’m Akinsanya Oluwafemi — a cybersecurity learner, content creator, and occasional motivational speaker to my own laptop when it crashes 😅.
+
+My focus is on ethical hacking, digital security, and creating content that breaks complex tech into fun, digestible bits. I believe learning cybersecurity shouldn’t feel like reading an ancient spellbook — it should feel interactive, practical, and even funny sometimes.
+
+Beyond the screen, I’m a sportsman — I love running and staying active because balance is key (you can’t hack all day and not stretch those legs 🏃🏽‍♂️).
+
+My mission? To make cybersecurity feel less intimidating and more exciting — one project, one tool, one video, and one Cert at a time.</p>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="mt-10">
-      <h2 class="text-2xl font-semibold mb-6">Selected projects</h2>
+      <h2 class="text-2xl font-semibold mb-6">My Selected projects</h2>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <!-- Project card -->
         <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-            <img src="assets/picture-icon.svg" alt="project 1" class="w-full h-40 object-cover" />
+            <img src="assets/ChatGPT Image Oct 18, 2025, 09_37_02 PM.png" alt="project 1" class="w-full h-40 object-cover" />
           <div class="p-4">
             <h3 class="font-semibold">Project One</h3>
             <p class="text-sm text-gray-600 mt-2">Short description of the project, the tech used, and the problem it solves.</p>
@@ -132,7 +146,7 @@
       </form>
     </section>
 
-    <footer class="mt-10 text-center text-sm text-gray-500">© Your Name — Built with ❤️</footer>
+    <footer class="mt-10 text-center text-sm text-gray-500">© Akinsanya Oluwafemi — Built with ❤️</footer>
   </main>
 
   <script>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Network Security Assessment Tools — AKINSANYA OLUWAFEMI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --site-bg: #252a34;
+      --card-bg: rgba(83, 84, 86, 0.8);
+      --text: #eaeaea;
+      --muted: #a0a0a0;
+      --link: #73b4d5;
+      --hover: #8fc7e3;
+      --accent: #73b4d5;
+      --border: #5c5e5f;
+      --button-bg: #73b4d5;
+    }
+    html,body{background:var(--site-bg);color:var(--text);}
+    a{color:var(--link);transition:all 0.3s ease;}
+    a:hover{color:var(--hover) !important;}
+    .bg-white{background-color:var(--card-bg) !important;color:inherit !important}
+    input,textarea,select,button{background:transparent !important;color:var(--text) !important;border-color:var(--border) !important}
+    .shadow,.shadow-sm,.shadow-lg{box-shadow:0 4px 6px rgba(0,0,0,0.1) !important}
+    header, footer{background:transparent}
+    .text-gray-500, .text-gray-600{color:var(--muted) !important;}
+    
+    /* Blog post specific styles */
+    .post-content {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    .post-content p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+    .post-content h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--text) !important;
+    }
+    .post-content img {
+      border-radius: 0.5rem;
+      margin: 2rem 0;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    .post-content ul {
+      margin: 1.5rem 0;
+      padding-left: 1.5rem;
+      list-style-type: disc;
+    }
+    .post-content li {
+      margin-bottom: 0.5rem;
+    }
+    .code-block {
+      background: rgba(0,0,0,0.2);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin: 1.5rem 0;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../../index.html" class="text-xl font-semibold">AKINSANYA OLUWAFEMI</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="../../index.html#about" class="hover:text-indigo-600">About</a>
+        <a href="../experience.html" class="hover:text-indigo-600">Experience</a>
+        <a href="../posts.html" class="hover:text-indigo-600">Posts</a>
+        <a href="../certifications.html" class="hover:text-indigo-600">Certifications</a>
+        <a href="../../index.html#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <article class="post-content">
+      <!-- Post Header -->
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold mb-4">Network Security Assessment Tools</h1>
+        <div class="flex items-center gap-4 text-gray-500 mb-6">
+          <time>October 10, 2025</time>
+          <span>•</span>
+          <span>Security Tools</span>
+        </div>
+        <img src="../assets/sample-project2.jpg" alt="Network Security Tools" class="w-full h-[400px] object-cover rounded-lg shadow-lg" />
+      </header>
+
+      <!-- Post Content -->
+      <div class="prose prose-lg">
+        <p>Essential network security assessment tools are crucial for identifying vulnerabilities and securing networks. In this post, we'll explore the most important tools and their practical applications.</p>
+
+        <h2>Key Assessment Tools</h2>
+        <ul>
+          <li>Network Mappers</li>
+          <li>Packet Analyzers</li>
+          <li>Vulnerability Scanners</li>
+          <li>Wireless Network Tools</li>
+        </ul>
+
+        <h2>Using Nmap for Network Discovery</h2>
+        <p>Here's a basic Nmap scan configuration for initial network assessment:</p>
+        
+        <div class="code-block">
+          <pre>nmap -sV -sC -O --top-ports 1000 target_ip
+# -sV: Version detection
+# -sC: Default scripts
+# -O: OS detection</pre>
+        </div>
+
+        <img src="../assets/nmap-scan.jpg" alt="Nmap Scan Results" class="my-8 rounded-lg shadow-lg" />
+
+        <h2>Analyzing Network Traffic</h2>
+        <p>Understanding network traffic patterns is essential for security assessment. Here are some key tools:</p>
+        <ul>
+          <li>Wireshark for deep packet inspection</li>
+          <li>tcpdump for command-line packet capture</li>
+          <li>NetworkMiner for traffic analysis</li>
+        </ul>
+
+        <!-- Add more content sections -->
+      </div>
+
+      <!-- Post Footer -->
+      <footer class="mt-12 pt-6 border-t border-gray-700">
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-sm rounded-full bg-opacity-20 text-accent" style="background-color: var(--card-bg)">Network</span>
+          <span class="px-3 py-1 text-sm rounded-full bg-opacity-20 text-accent" style="background-color: var(--card-bg)">Security Tools</span>
+          <span class="px-3 py-1 text-sm rounded-full bg-opacity-20 text-accent" style="background-color: var(--card-bg)">Assessment</span>
+        </div>
+      </footer>
+    </article>
+  </main>
+
+  <footer id="footer" class="mt-10 text-center text-sm text-gray-500">© AKINSANYA OLUWAFEMI — Built with ❤️</footer>
+</body>
+</html>

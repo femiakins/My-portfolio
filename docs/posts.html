@@ -3,23 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Field Notes — Lorem Ipsum</title>
+  <title>Field Notes — AKINSANYA OLUWAFEMI</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root{
-      --site-bg: #061324;
-      --card-bg: rgba(10,20,40,0.65);
-      --text: #e6eef8;
-      --muted: #9fb7c8;
-      --link: #7dd3fc;
-      --border: rgba(255,255,255,0.08);
+   :root{
+    --site-bg: #0f172a;  /* Dark blue background */
+    --card-bg: #1e293b;  /* Medium dark blue for cards */
+    --text: #646ac2;     /* Light text color */
+    --muted: #ffffff;    /* Muted text */
+    --link: #60a5fa;     /* Bright blue links */
+    --hover: #107fff;    /* Lighter blue on hover */
+    --accent: #1d4ed8;   /* Vibrant blue for accents */
+    --border: #334155;   /* Dark blue border */
+    --button-bg: #1d4ed8; /* Button background */
+  }
+  
+  /* Also update the body background class */
+  body.bg-gray-50 {
+    background-color: var(--site-bg) !important;
+    color: var(--text) !important;
+  }:root{
+    --site-bg: #0f172a;  /* Dark blue background */
+    --card-bg: #1e293b;  /* Medium dark blue for cards */
+    --text: #646ac2;     /* Light text color */
+    --muted: #ffffff;    /* Muted text */
+    --link: #60a5fa;     /* Bright blue links */
+    --hover: #107fff;    /* Lighter blue on hover */
+    --accent: #1d4ed8;   /* Vibrant blue for accents */
+    --border: #334155;   /* Dark blue border */
+    --button-bg: #1d4ed8; /* Button background */
+  }
+  
+  /* Also update the body background class */
+  body.bg-gray-50 {
+    background-color: var(--site-bg) !important;
+    color: var(--text) !important;
+  }
+    
+    /* Blog post specific styles */
+    .post-card {
+      transition: transform 0.3s ease;
     }
-    html,body{background:var(--site-bg);color:var(--text);}
-    a{color:var(--link);}
-    .bg-white{background-color:var(--card-bg) !important;color:inherit !important}
-    input,textarea,select,button{background:transparent !important;color:var(--text) !important;border-color:var(--border) !important}
-    .shadow,.shadow-sm,.shadow-lg{box-shadow:0 8px 24px rgba(2,6,23,0.6) !important}
-    header, footer{background:transparent}
+    .post-card:hover {
+      transform: translateY(-4px);
+    }
+    .post-image {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+    @media (min-width: 768px) {
+      .post-image {
+        height: 300px;
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -40,18 +77,84 @@
   </header>
 
   <main id="main" class="max-w-5xl mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold mb-4">Field Notes</h1>
-    <ul class="space-y-4">
-      <li class="bg-white p-6 rounded shadow">
-        <div class="flex items-start gap-4">
-          <img src="assets/picture-icon.svg" class="w-20 h-20 object-cover rounded" alt="post" />
-          <div>
-            <a href="posts/sample-post.html" class="font-semibold">Sample Post</a>
-            <p class="text-sm text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4 text-white">Cybersecurity Field Notes</h1>
+      <p class="text-white max-w-2xl mx-auto">Exploring cybersecurity concepts, sharing lab experiences, and documenting my journey in information security.</p>
+    </header>
+
+    <div class="grid gap-8 md:grid-cols-2">
+      <!-- First Post -->
+      <article class="bg-white rounded-lg shadow-lg overflow-hidden post-card">
+        <img src="assets/sample-project1.jpg" alt="Project Screenshot" class="post-image" />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold mb-3">
+            <a href="posts/security-lab-setup.html" class="hover:text-accent">Setting Up a Security Lab Environment</a>
+          </h2>
+          <div class="text-sm text-gray-500 mb-4">October 15, 2025 • Lab Setup</div>
+          <p class="text-gray-600 mb-4">Step-by-step guide on creating a secure virtual lab environment for cybersecurity testing and experimentation. Includes VM configuration and network isolation techniques.</p>
+          <div class="flex items-center justify-between">
+            <a href="posts/security-lab-setup.html" class="inline-flex items-center text-link hover:text-hover">
+              Read More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <div class="flex gap-2">
+              <span class="px-3 py-1 text-sm rounded-full bg-opacity-20 text-accent" style="background-color: var(--card-bg)">Lab Setup</span>
+              <span class="px-3 py-1 text-sm rounded-full bg-opacity-20 text-accent" style="background-color: var(--card-bg)">Virtual Machines</span>
+            </div>
           </div>
         </div>
-      </li>
-    </ul>
+      </article>
+
+      <!-- Second Post -->
+      <article class="bg-white rounded-lg shadow-lg overflow-hidden post-card">
+        <img src="assets/sample-project2.jpg" alt="Project Screenshot" class="post-image" />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold mb-3">
+            <a href="posts/network-security.html" class="hover:text-accent">Network Security Assessment Tools</a>
+          </h2>
+          <div class="text-sm text-gray-500 mb-4">October 10, 2025 • Security Tools</div>
+          <p class="text-gray-600 mb-4">Overview of essential network security assessment tools, their applications, and practical examples of implementing them in a controlled environment.</p>
+          <div class="flex items-center justify-between">
+            <a href="posts/network-security.html" class="inline-flex items-center text-link hover:text-hover">
+              Read More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <div class="flex gap-2">
+              <span class="px-3 py-1 text-sm rounded-full bg-opacity-20 text-accent" style="background-color: var(--card-bg)">Network</span>
+              <span class="px-3 py-1 text-sm rounded-full bg-opacity-20 text-accent" style="background-color: var(--card-bg)">Tools</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Template for New Post -->
+      <article class="bg-white rounded-lg shadow-lg overflow-hidden post-card">
+        <img src="assets/picture-icon.svg" alt="Project Screenshot" class="post-image" />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold mb-3">
+            <a href="posts/your-post.html" class="hover:text-accent">Your Post Title Here</a>
+          </h2>
+          <div class="text-sm text-gray-500 mb-4">[Date] • [Category]</div>
+          <p class="text-gray-600 mb-4">Your post description goes here. Make it engaging and informative to attract readers.</p>
+          <div class="flex items-center justify-between">
+            <a href="posts/your-post.html" class="inline-flex items-center text-link hover:text-hover">
+              Read More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <div class="flex gap-2">
+              <span class="px-3 py-1 text-sm rounded-full bg-opacity-20 text-accent" style="background-color: var(--card-bg)">[Tag]</span>
+              <span class="px-3 py-1 text-sm rounded-full bg-opacity-20 text-accent" style="background-color: var(--card-bg)">[Tag]</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
 
     <footer id="footer" class="mt-10 text-center text-sm text-gray-500">© Lorem Ipsum — Built with ❤️</footer>
   </main>

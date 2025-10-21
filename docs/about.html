@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — AKINSANYA OLUWAFEMI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+   :root{
+    --site-bg: #0f172a;  /* Dark blue background */
+    --card-bg: #1e293b;  /* Medium dark blue for cards */
+    --text: #646ac2;     /* Light text color */
+    --muted: #ffffff;    /* Muted text */
+    --link: #60a5fa;     /* Bright blue links */
+    --hover: #107fff;    /* Lighter blue on hover */
+    --accent: #1d4ed8;   /* Vibrant blue for accents */
+    --border: #334155;   /* Dark blue border */
+    --button-bg: #1d4ed8; /* Button background */
+  }
+  
+  /* Also update the body background class */
+  body.bg-gray-50 {
+    background-color: var(--site-bg) !important;
+    color: var(--text) !important;
+  }
+    
+    /* About page specific styles */
+    .about-content {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    .about-content p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: #ffffff;
+    }
+    .about-content h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+    }
+    .skill-tag {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      border-radius: 9999px;
+      background-color: var(--card-bg);
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../index.html" class="text-xl font-semibold">AKINSANYA OLUWAFEMI</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="about.html" class="hover:text-indigo-600">About</a>
+        <a href="experience.html" class="hover:text-indigo-600">Experience</a>
+        <a href="posts.html" class="hover:text-indigo-600">Posts</a>
+        <a href="certifications.html" class="hover:text-indigo-600">Certifications</a>
+        <a href="../index.html#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <article class="about-content">
+      <!-- Profile Header -->
+      <header class="text-center mb-12">
+        <div class="mb-6">
+          <img src="../assets/Futuristic _AF_ Logo on Circuitry Background.png" alt="Akinsanya Oluwafemi" class="w-32 h-32 rounded-full mx-auto shadow-lg" />
+        </div>
+        <h1 class="text-4xl font-bold mb-4 text-white">About Me</h1>
+      </header>
+
+      <!-- Introduction -->
+      <section>
+        <p>I'm Akinsanya Oluwafemi — a cybersecurity learner, content creator, and occasional motivational speaker to my own laptop when it crashes 😅. My journey in technology is driven by a passion for securing digital spaces and making complex security concepts accessible to everyone.</p>
+      </section>
+
+      <!-- Professional Focus -->
+      <h2>Professional Focus</h2>
+      <p>My focus is on ethical hacking, digital security, and creating content that breaks complex tech into fun, digestible bits. I believe learning cybersecurity shouldn't feel like reading an ancient spellbook — it should feel interactive, practical, and even funny sometimes.</p>
+
+      <!-- Technical Expertise -->
+      <h2>Technical Expertise</h2>
+      <div class="flex flex-wrap gap-2 mb-8">
+        <span class="skill-tag">Ethical Hacking</span>
+        <span class="skill-tag">Network Security</span>
+        <span class="skill-tag">Incident Response</span>
+        <span class="skill-tag">Security Analysis</span>
+        <span class="skill-tag">Windows/Linux Administration</span>
+        <span class="skill-tag">Penetration Testing</span>
+      </div>
+
+      <!-- Current Focus -->
+      <h2>Current Focus</h2>
+      <p>I'm currently deepening my expertise in:</p>
+      <div class="flex flex-wrap gap-2 mb-8">
+        <span class="skill-tag">Advanced Penetration Testing</span>
+        <span class="skill-tag">Malware Analysis</span>
+        <span class="skill-tag">Cloud Security</span>
+        <span class="skill-tag">Security Architecture</span>
+      </div>
+
+      <!-- Learning Philosophy -->
+      <h2>Learning Philosophy</h2>
+      <p>My mission? To make cybersecurity feel less intimidating and more exciting — one project, one tool, one video, and one certification at a time. I believe in learning by doing, sharing knowledge openly, and building a supportive community of security enthusiasts.</p>
+
+      <!-- Beyond Tech -->
+      <h2>Beyond Tech</h2>
+      <p>Beyond the screen, I'm a sportsman — I love running and staying active because balance is key (you can't hack all day and not stretch those legs 🏃🏽‍♂️). When I'm not exploring the digital security landscape, you might find me:</p>
+      <div class="flex flex-wrap gap-2 mb-8">
+        <span class="skill-tag">Running</span>
+        <span class="skill-tag">Playing Football</span>
+        <span class="skill-tag">Reading Tech Blogs</span>
+        <span class="skill-tag">Creating Content</span>
+      </div>
+
+      <!-- Connect -->
+      <h2>Let's Connect</h2>
+      <p>I'm always excited to connect with fellow security enthusiasts, share knowledge, and collaborate on interesting projects. Whether you're just starting your cybersecurity journey or looking to collaborate on advanced security projects, I'd love to hear from you.</p>
+
+      <!-- Social Links -->
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#" class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">View My Projects</a>
+        <a href="#contact" class="px-6 py-3 border border-indigo-600 text-white rounded-lg hover:bg-indigo-600">Get in Touch</a>
+      </div>
+    </article>
+  </main>
+
+  <footer id="footer" class="mt-10 text-center text-sm text-gray-500">© AKINSANYA OLUWAFEMI — Built with ❤️</footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certification Details — AKINSANYA OLUWAFEMI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --site-bg: #252a34;
+      --card-bg: rgba(83, 84, 86, 0.8);
+      --text: #eaeaea;
+      --muted: #a0a0a0;
+      --link: #73b4d5;
+      --hover: #8fc7e3;
+      --accent: #73b4d5;
+      --border: #5c5e5f;
+      --button-bg: #73b4d5;
+    }
+    html,body{background:var(--site-bg);color:var(--text);}
+    a{color:var(--link);transition:all 0.3s ease;}
+    a:hover{color:var(--hover) !important;}
+    .bg-white{background-color:var(--card-bg) !important;color:inherit !important}
+    input,textarea,select,button{background:transparent !important;color:var(--text) !important;border-color:var(--border) !important}
+    .shadow,.shadow-sm,.shadow-lg{box-shadow:0 4px 6px rgba(0,0,0,0.1) !important}
+    header, footer{background:transparent}
+    .text-gray-500, .text-gray-600{color:var(--muted) !important;}
+    
+    /* Certification specific styles */
+    .cert-content {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    .cert-content p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+    .cert-content h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .cert-content ul {
+      margin: 1.5rem 0;
+      padding-left: 1.5rem;
+      list-style-type: disc;
+    }
+    .cert-content li {
+      margin-bottom: 0.5rem;
+    }
+    .cert-badge {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin: 2rem auto;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../index.html" class="text-xl font-semibold">AKINSANYA OLUWAFEMI</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="../index.html#about" class="hover:text-indigo-600">About</a>
+        <a href="experience.html" class="hover:text-indigo-600">Experience</a>
+        <a href="posts.html" class="hover:text-indigo-600">Posts</a>
+        <a href="certifications.html" class="hover:text-indigo-600">Certifications</a>
+        <a href="../index.html#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <article class="cert-content">
+      <!-- Certification Header -->
+      <header class="mb-8 text-center">
+        <h1 class="text-4xl font-bold mb-4">[Certification Name]</h1>
+        <div class="flex items-center justify-center gap-4 text-gray-500 mb-6">
+          <time>Achieved: [Month Year]</time>
+          <span>•</span>
+          <span>Credential ID: [ID Number]</span>
+        </div>
+        <img src="../assets/cert-badge.png" alt="Certification Badge" class="cert-badge shadow-lg rounded-lg" />
+      </header>
+
+      <!-- Certification Content -->
+      <div class="prose prose-lg">
+        <h2>About This Certification</h2>
+        <p>[Brief description of what the certification represents and its importance in the industry]</p>
+
+        <h2>Key Skills Validated</h2>
+        <ul>
+          <li>Skill Area 1</li>
+          <li>Skill Area 2</li>
+          <li>Skill Area 3</li>
+          <li>Skill Area 4</li>
+        </ul>
+
+        <h2>Certification Journey</h2>
+        <p>[Personal experience preparing for and achieving the certification]</p>
+
+        <h2>Study Resources Used</h2>
+        <ul>
+          <li>Resource 1</li>
+          <li>Resource 2</li>
+          <li>Resource 3</li>
+        </ul>
+
+        <h2>Projects & Applications</h2>
+        <p>[How you've applied the knowledge from this certification in real-world scenarios]</p>
+
+        <!-- Verification Section -->
+        <div class="mt-12 p-6 bg-white rounded-lg shadow-lg text-center">
+          <h2>Verify This Certification</h2>
+          <p class="mb-4">You can verify this certification using the following methods:</p>
+          <a href="#" class="inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+            Verify on Issuing Platform
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer id="footer" class="mt-10 text-center text-sm text-gray-500">© AKINSANYA OLUWAFEMI — Built with ❤️</footer>
+</body>
+</html>
